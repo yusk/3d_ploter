@@ -51,20 +51,6 @@ class ChannelStateInformation():
         self.powers = powers
         self.phases = phases
 
-    def get_x_for_predict(self):
-        x = []
-        for power in self.powers:
-            x.extend(power)
-        for phase in self.phases:
-            x.extend(phase)
-        # x = self.powers[0]
-        # x = self.powers[0][20:24]
-        # x = self.powers[0][20:22]
-        # x = self.powers[0][21:23]
-        # x = self.powers[0][22:24]
-        # x = self.phases[0]
-        return x
-
     def plot_power(self):
         plt.plot(self.powers[0], label="antenna 1")
         plt.plot(self.powers[1], label="antenna 2")
