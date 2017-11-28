@@ -50,17 +50,3 @@ class ChannelStateInformation():
             phases[2].append(cmath.polar(csi_in_channel[0][2])[1])
         self.powers = powers
         self.phases = phases
-
-    def plot_power(self):
-        plt.plot(self.powers[0], label="antenna 1")
-        plt.plot(self.powers[1], label="antenna 2")
-        plt.plot(self.powers[2], label="antenna 3")
-        plt.legend(loc=1)
-        plt.show()
-
-    def plot_phase(self):
-        plt.plot(self.phases[0], label="antenna 1")
-        plt.plot(self.phases[1], label="antenna 2")
-        plt.plot(self.phases[2], label="antenna 3")
-        plt.legend(loc=1)
-        plt.show()
