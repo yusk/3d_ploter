@@ -1,6 +1,5 @@
 from copy import deepcopy
 import cmath
-import matplotlib.pyplot as plt
 
 
 class ChannelStateInformation():
